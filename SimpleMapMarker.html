@@ -24,21 +24,28 @@
 
       function initMap() {
         var myLatLng = {lat: 51.521, lng: -0.133};
+        var myLatLng2 = {lat: 51.527, lng: -0.129};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
           center: myLatLng
-        });
+         });
 
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          title: 'Hello World!'
+          title: 'UCL'
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'CarPark'
         });
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=https://maps.googleapis.com/maps/api/js?key=AIzaSyBFiu9TiSSgQp_lprMB-UtqgG6OFRuHPsg&callback=initMap&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFiu9TiSSgQp_lprMB-UtqgG6OFRuHPsg&callback=initMap">
     </script>
   </body>
 </html>
